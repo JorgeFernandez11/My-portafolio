@@ -19,6 +19,9 @@ aside img{
     flex-direction: column;
     align-items: center;
 }
+.subname{
+    font-size: 22px;
+}
 aside > div{
     display: flex;
     align-items: center;
