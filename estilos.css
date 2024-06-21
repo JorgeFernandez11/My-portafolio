@@ -1,0 +1,60 @@
+@import url('./normalize.css');
+body{
+    color: white;
+    font-family: 'candara';
+}
+aside{
+    width: 400px;
+    background-color: rgb(105, 101, 101);
+    height: 100vh;
+}
+aside img{
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid rgb(19, 20, 19);
+    animation: fondo infinite 2s;
+}
+#profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    height: 100%;
+}
+.link{
+    background-color: rgb(159, 150, 150);
+    width:220px ;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor:pointer ;
+    transition: background-color .5s;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+#links{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.link:hover{
+    background-color: rgb(181, 120, 79);
+}
+@keyframes fondo{
+    0%{
+        box-shadow:0 10px 30px -10px white ;
+    }
+    50%{
+        box-shadow:0 10px 30px -10px rgb(45, 172, 179);
+    }
+    100%{
+        box-shadow:0 10px 30px -10px white;
+    }
+}
